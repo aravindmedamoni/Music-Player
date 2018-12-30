@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/musicicon1"
+        android:baselineAligned="false"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_range"
+        android:layout_width="350dp"
+        android:max="320"
+        android:layout_height="25dp"
+        android:layout_marginTop="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/startingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="00:00"/>
+
+        <TextView
+            android:id="@+id/remaininingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="233dp"
+            android:textSize="25dp"
+            android:text="-4:00"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playbtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pausebutton"
+        android:onClick="playbutton"
+        tools:ignore="onclick"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/silentmode"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/silentmode"/>
+
+        <SeekBar
+           android:layout_width="270dp"
+            android:id="@+id/seekbar_sound"
+           android:layout_height="40dp"
+           android:max="200"
+           android:progress="100"/>
+
+        <ImageView
+            android:id="@+id/soundmode"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/soundmode"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
